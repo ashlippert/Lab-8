@@ -77,7 +77,7 @@ alt "Motor Circuit" width="400"/>
 <br/>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/876094b5-a43f-4748-bba7-ac4ad30037e3)" alt="Blocks 2" width="400">
+<img src="https://github.com/user-attachments/assets/876094b5-a43f-4748-bba7-ac4ad30037e3" alt="Blocks 2" width="400">
 <br/>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 5: MIT App Inventor 2 blocks for left turn function (2/6). </figcaption>
 </div> 
