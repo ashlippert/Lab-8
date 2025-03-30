@@ -33,33 +33,31 @@ March 30th, 2025
   The schematic for assembling the motor circuit is provided in figure 1 below.
 
 <div align= "center">
-<img src="" alt "Schematic 1" width="400"/>
+<img src= "https://github.com/user-attachments/assets/4b8a9e11-0ed9-4751-8eaf-1036c17608a1" alt "Schematic 1" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 1: Motor circuit schematic from Lab 6. Obtained from https://learn.sparkfun.com/tutorial/sparkfun-inventors-kit-experiment-guide---v40/circuit-3b-
-distance-sensor
+<figcaption style="font-size: 16px; text-align: center;"> Figure 1: Motor circuit schematic from Lab 6. Obtained from (https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-experiment-guide---
+v40/circuit-5b-remote-controlled-robot
  </figcaption>
 </div>
 
 <br>
 
-   Once assembled, the RedBoard circuit created using schematic 1 should resemble what is shown in Figure 2 below.
+   Once assembled, the RedBoard circuit created using schematic 1 should resemble what is shown in Figure 2 below. The wheels were attached on the underside of the RedBoard with velcro once circuit assembly was complete.
 
 <div align= "center">
-<img src="https://github.com/user-attachments/assets/d035d937-2607-494d-9e97-8ce2f591d9b5" alt "Schematic 1" width="400"/>
+<img src="https://github.com/user-attachments/assets/707ffc2e-4e82-4dd4-90eb-d30b9c725e5c"
+alt "Motor Circuit" width="400"/>
 <br>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed LED circuit from Schematic 1. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 2: Constructed motor circuit from Schematic 1. </figcaption>
 </div>
 <br>
 
 **Objective 2: Develop the App**
 
-**Potentiometer Controlled Circuit Assembly**
-
-   Connect the potentiometer to 5V and Ground, with the variable resistance pin connected to A0. Keep the previous circuit intact while integrating the potentiometer into the setup. The schematic for this setup is given in Figure 3 and 4 below.
-
+   
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/4cec5b73-a503-4f8a-9187-81eadedb0bf6" alt="Schematic 2" width="400">
+<img src="" alt="Schematic 2" width="400">
 <br/>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 3: Potentiometer controlled LED circuit schematic. </figcaption>
 </div>   
@@ -67,48 +65,31 @@ distance-sensor
 <br/>
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/f5ad3cd8-12cb-47c6-9d8f-ee0798607954" alt="Layout 2" width="400">
+<img src="" alt="Layout 2" width="400">
 <br/>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Potentiometer controlled LED circuit layout. </figcaption>
 </div>   
 
 <br/>
 
-  Once assembled, the circuit should look resemble Figure 5 below.
-
-   <div align="center">
-  <img src="https://github.com/user-attachments/assets/23505952-297d-40d4-9144-ae91f7526852" alt="Assembled potentiometer controlled LED circuit" width="400">
-      <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Constructed potentiometer controlled LED circuit from Figure 3. </figcaption>
-</div>
-<br>
 
 **Objective 3: Wireless Remote**
 
-**Photoresistor Controlled Circuit Assembly**
-
-  Replace the potentiometer in the previous circuit with a series circuit consisting of a photoresistor and a 10 kΩ resistor. Connect 5V to the photoresistor, Ground to the resistor, and A0 to the node between them. The schematic and layout for this circuit is provided in Figure 6 and 7 below.
+  Wire the HC-05 Bluetooth UART module on the breadboard. Use pins 2 and 3 for the Rx and Tx connections, incorporating a voltage divider with resistors between 1kΩ and 2kΩ to manage the signal levels. This setup ensures that the Bluetooth module communicates effectively with the robot’s RedBoard.
 
  <div align="center">
-  <img src="https://github.com/user-attachments/assets/2d1a3739-0cca-4c5f-8fb9-16fd0eecc990" alt="Schematic 3" width="400">
+  <img src="https://github.com/user-attachments/assets/f1274774-c9dd-420f-9a06-b8f088f63156" alt="Bluetooth Motor Circuit" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Photoresistor controlled LED circuit schematic. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Motor Circuit with HC-05 Bluetooth UART module addition. </figcaption>
 </div>
 <br>
 
+Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports Bluetooth communication and commands from the mobile app. Include the necessary code lines for establishing Bluetooth communication, setting up serial connections, and interpreting data commands sent from the app (such as direction and speed).
+
  <div align="center">
-  <img src="https://github.com/user-attachments/assets/e0e26917-4999-4354-8292-89b97e9d5812" alt="Layout 3" width="400">
+  <img src="" alt="Layout 3" width="400">
       <br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Photoresistor controlled LED circuit layout. </figcaption>
-</div>
-<br>
-
-   Once assembled, the RedBoard circuit should resemble what is shown in Figure 8 below.
-   
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/bdb131cb-9715-411e-a1f5-6af3f370975d" alt="Assembled photoresistor controlled LED circuit" width="400">
-      <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 8: Constructed photoresistor controlled LED circuit. </figcaption>
 </div>
 <br>
 
