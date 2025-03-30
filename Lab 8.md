@@ -52,10 +52,10 @@ alt "Motor Circuit" width="400"/>
 </div>
 <br>
 
-   The code used in Arduino IDE to move the robot can be described in the following Figures 3-7. This code will be used alongside the App Inventor to create a remote controlled car.
+   The code used in Arduino IDE to move the robot can be described in the following Figures 3-7. This code will be used alongside the App Inventor to create a remote controlled car and will be modified during testing procedures.
    
    <div align= "center">
-<img src="https://github.com/user-attachments/assets/a795dc69-36d4-4cbe-b28a-e31282f4755a"
+<img src="https://github.com/user-attachments/assets/5930a791-ca93-4d04-99d5-7a96481c6564"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 3: Code to move motor robot (1/5). </figcaption>
@@ -63,7 +63,7 @@ alt "Motor Circuit" width="400"/>
 <br>
 
  <div align= "center">
-<img src="https://github.com/user-attachments/assets/3f6f3fb5-532f-4a1c-9546-32011c5732bf"
+<img src="https://github.com/user-attachments/assets/c4fcee61-38fc-433e-9a0a-d17beeb33261"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Code to move motor robot (2/5). </figcaption>
@@ -71,7 +71,7 @@ alt "Motor Circuit" width="400"/>
 <br>
 
  <div align= "center">
-<img src="https://github.com/user-attachments/assets/0a608d18-7450-4a1b-9c27-f9c0dee2f238"
+<img src= "https://github.com/user-attachments/assets/bf30d3d2-2ebc-4f9d-9b86-f1fb2928e973"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Code to move motor robot (3/5). </figcaption>
@@ -79,7 +79,7 @@ alt "Motor Circuit" width="400"/>
 <br>
 
  <div align= "center">
-<img src="https://github.com/user-attachments/assets/12f038cf-e96c-46b1-a89d-47112acd131b"
+<img src="https://github.com/user-attachments/assets/a51e6eba-7efb-4ea2-a778-3f9e46507952"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Code to move motor robot (4/5). </figcaption>
@@ -87,7 +87,7 @@ alt "Motor Circuit" width="400"/>
 <br>
 
  <div align= "center">
-<img src="https://github.com/user-attachments/assets/2567850a-ed17-454f-aeb9-5ef4344eeb03"
+<img src= "https://github.com/user-attachments/assets/38b4b0a9-8d43-4c4e-a022-1ce29e224a89"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Code to move motor robot (5/5). </figcaption>
@@ -209,7 +209,7 @@ Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports
 
 
 **Part 3: Wireless Remote**
-   Modify the app to communicate wirelessly via Bluetooth, then pair the Android device with the robot’s Bluetooth module. Verify that each button press sends the correct direction and speed commands, testing different speeds and movement combinations for smooth control. Once the connection is stable, perform a full test run to check for consistent responses. If issues arise, troubleshoot the Bluetooth connection, app blocks, or Arduino sketch as needed.
+   Modify the app to communicate wirelessly via Bluetooth, then pair the Android device with the robot’s Bluetooth module. Verify that each button press sends the correct direction and speed commands, testing different speeds and movement combinations for smooth control. Once the connection is stable, perform a full test run to check for consistent responses. If issues arise, troubleshoot the Bluetooth connection, app blocks, or Arduino sketch as needed. The modifications made to the motor movement code from Part 1 are shown in Figures 19-23 in the Test Results section.
 
 
 
@@ -227,7 +227,7 @@ Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports
 | 89        | No    |
 | 88        | No    |
 
-**Modified Blocks for Bluetooth Compatability**
+**Modified App Inventor Blocks for Bluetooth Compatability**
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/f38f9655-7803-4f0a-9ae7-42975c43a762" alt="Bluetooth Blocks 1" width="400">
@@ -249,6 +249,48 @@ Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports
       <br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 18: Blocks added in MIT App Inventor 2 to enable bluetooth compatibility (3/3). </figcaption>
 </div>
+
+**Modified IDE Code For Bluetooth Compatibility**
+<div align= "center">
+<img src="https://github.com/user-attachments/assets/a795dc69-36d4-4cbe-b28a-e31282f4755a"
+alt "Motor Circuit" width="400"/>
+<br>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 19: Code to move motor robot (1/5). </figcaption>
+</div>
+<br>
+
+ <div align= "center">
+<img src="https://github.com/user-attachments/assets/3f6f3fb5-532f-4a1c-9546-32011c5732bf"
+alt "Motor Circuit" width="400"/>
+<br>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 20: Modified code to move motor robot (2/5). </figcaption>
+</div>
+<br>
+
+ <div align= "center">
+<img src="https://github.com/user-attachments/assets/0a608d18-7450-4a1b-9c27-f9c0dee2f238"
+alt "Motor Circuit" width="400"/>
+<br>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 21: Modified code to move motor robot (3/5). </figcaption>
+</div>
+<br>
+
+ <div align= "center">
+<img src="https://github.com/user-attachments/assets/12f038cf-e96c-46b1-a89d-47112acd131b"
+alt "Motor Circuit" width="400"/>
+<br>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 22: Modified code to move motor robot (4/5). </figcaption>
+</div>
+<br>
+
+ <div align= "center">
+<img src="https://github.com/user-attachments/assets/2567850a-ed17-454f-aeb9-5ef4344eeb03"
+alt "Motor Circuit" width="400"/>
+<br>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 23: Modified code to move motor robot (5/5). </figcaption>
+</div>
+<br>
+
 
 
 ## Discussion:
