@@ -122,7 +122,7 @@ alt "Motor Circuit" width="400"/>
 Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports Bluetooth communication and commands from the mobile app. Include the necessary code lines for establishing Bluetooth communication, setting up serial connections, and interpreting data commands sent from the app (such as direction and speed). The blocks added to the code to allow bluetooth connection are shown in Figure 10-12.
 
  <div align="center">
-  <img src="https://github.com/user-attachments/assets/f38f9655-7803-4f0a-9ae7-42975c43a762)" alt="Bluetooth Blocks 1" width="400">
+  <img src= "https://github.com/user-attachments/assets/f38f9655-7803-4f0a-9ae7-42975c43a762" alt="Bluetooth Blocks 1" width="400">
       <br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 10: Blocks added in MIT App Inventor 2 to enable bluetooth compatibility (1/3) </figcaption>
 </div>
@@ -149,9 +149,8 @@ Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports
 
 ## Test Equipment
 
-1. Fluke 87 V DMM
+1. A smartphone running an Android OS with the MIT AI2 Companion App
 2. Computer with Arduino IDE
-3. Oscilloscope
    
    
 ## Test Procedures
@@ -191,7 +190,7 @@ void loop() {
 
 **Part 2: Develop the App**
 
-   Upload the Analog Read Serial program (Examples > Basics > AnalogReadSerial) to the Arduino and open the serial monitor (Tools > Serial Monitor), ensuring the baud rate is set to 9600 bps. Adjust the potentiometer and observe the serial output. Modify the code to control the LED’s blinking time based on the potentiometer’s input, demonstrating how analog inputs can be converted into digital signals.
+   For testing, connect the phone to the RedBoard via USB, press the button to start communication, and check if the label displays data. Test each movement button to make sure the robot responds correctly, and check that the speed controls work. Make sure the label shows the right data from the Arduino. Run several tests to confirm everything is working and fix any issues with communication or controls.
 
    The code used for this section of the lab is provided below:
 <br>
