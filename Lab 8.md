@@ -54,44 +54,95 @@ alt "Motor Circuit" width="400"/>
 
 **Objective 2: Develop the App**
 
-   
+   First, create an account and log into MIT App Inventor 2. Start a new project, then in the Designer section, add a button to start serial communication, a label to show data from the Arduino, and buttons for moving the robot (forward, backward, right, left) with at least three speed options. Add the Serial and Clock components to handle communication and timing. 
+   For our app, a check box was used to select the speed of the motor, and then buttons indicate direction.The designer section results should be comparable to what is shown in Figure 3 below.
 
 <div align="center">
-<img src="" alt="Schematic 2" width="400">
+<img src="https://github.com/user-attachments/assets/996ddd1f-7188-43e0-a5ec-eee48d613165" alt="Designer App" width="400">
 <br/>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 3: Potentiometer controlled LED circuit schematic. </figcaption>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 3: Designer section in MIT App Inventor 2 after adding the necessary components to the app. </figcaption>
 </div>   
 
 <br/>
+   In the Blocks section, set the button to connect to the RedBoard and use WriteSerial to send movement commands. Once the app is ready, build it and install the APK on an Android phone using the QR code. The following figures 4-9 show the blocks written to control our group's motor from the remote app.
+
+<br/>
 
 <div align="center">
-<img src="" alt="Layout 2" width="400">
+<img src="https://github.com/user-attachments/assets/fdcc6cc5-0e11-4987-83e2-28e197230d77" alt="Blocks 1" width="400">
 <br/>
-<figcaption style="font-size: 16px; text-align: center;"> Figure 4: Potentiometer controlled LED circuit layout. </figcaption>
-</div>   
+<figcaption style="font-size: 16px; text-align: center;"> Figure 4: MIT App Inventor 2 blocks for intializing app (1/6). </figcaption>
+</div> 
+
+<br/>
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/876094b5-a43f-4748-bba7-ac4ad30037e3)" alt="Blocks 2" width="400">
+<br/>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 5: MIT App Inventor 2 blocks for left turn function (2/6). </figcaption>
+</div> 
+
+<br/>
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/29c8a2f8-f3c1-4f45-a3df-a64cefd595a1" alt="Blocks 3" width="400">
+<br/>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 6: MIT App Inventor 2 blocks for right turn function (3/6). </figcaption>
+</div> 
+
+<br/>
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/2aade032-af0d-41e7-9a58-5da7a6481b71" alt="Blocks 4" width="400">
+<br/>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 7: MIT App Inventor 2 blocks for forwards motor function (4/6). </figcaption>
+</div> 
+
+<br/>
+<div align="center">
+<img src="https://github.com/user-attachments/assets/e8487562-2b17-47db-8f7d-47299a50cfe5" alt="Blocks 5" width="400">
+<br/>
+<figcaption style="font-size: 16px; text-align: center;"> Figure 8: MIT App Inventor 2 blocks for backwards motor function (5/5). </figcaption>
+</div> 
 
 <br/>
 
 
 **Objective 3: Wireless Remote**
 
-  Wire the HC-05 Bluetooth UART module on the breadboard. Use pins 2 and 3 for the Rx and Tx connections, incorporating a voltage divider with resistors between 1kΩ and 2kΩ to manage the signal levels. This setup ensures that the Bluetooth module communicates effectively with the robot’s RedBoard.
+  Wire the HC-05 Bluetooth UART module on the breadboard. Use pins 2 and 3 for the Rx and Tx connections, incorporating a voltage divider with resistors between 1kΩ and 2kΩ to manage the signal levels. This setup ensures that the Bluetooth module communicates effectively with the robot’s RedBoard. The circuit with the HC-05 module added should resemble what is shown in Figure 9 below.
 
  <div align="center">
   <img src="https://github.com/user-attachments/assets/f1274774-c9dd-420f-9a06-b8f088f63156" alt="Bluetooth Motor Circuit" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Motor Circuit with HC-05 Bluetooth UART module addition. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 9: Motor Circuit with HC-05 Bluetooth UART module addition. </figcaption>
 </div>
 <br>
 
-Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports Bluetooth communication and commands from the mobile app. Include the necessary code lines for establishing Bluetooth communication, setting up serial connections, and interpreting data commands sent from the app (such as direction and speed).
+Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports Bluetooth communication and commands from the mobile app. Include the necessary code lines for establishing Bluetooth communication, setting up serial connections, and interpreting data commands sent from the app (such as direction and speed). The blocks added to the code to allow bluetooth connection are shown in Figure 10-12.
 
  <div align="center">
-  <img src="" alt="Layout 3" width="400">
+  <img src="https://github.com/user-attachments/assets/f38f9655-7803-4f0a-9ae7-42975c43a762)" alt="Bluetooth Blocks 1" width="400">
       <br/>
-  <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Photoresistor controlled LED circuit layout. </figcaption>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 10: Blocks added in MIT App Inventor 2 to enable bluetooth compatibility (1/3) </figcaption>
 </div>
-<br>
+
+<br/>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8759198d-5a3b-49d6-8283-190b65ae5850" alt="Bluetooth Blocks 2" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 11: Blocks added in MIT App Inventor 2 to enable bluetooth compatibility (2/3). </figcaption>
+</div>
+
+<br/>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/78d968b8-aec6-4d36-9c4a-630442359062" alt="Bluetooth Blocks 3" width="400">
+      <br/>
+  <figcaption style="font-size: 16px; text-align: center;"> Figure 12: Blocks added in MIT App Inventor 2 to enable bluetooth compatibility (3/3). </figcaption>
+</div>
+
+<br/>
 
 
 <br>
