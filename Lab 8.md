@@ -63,7 +63,7 @@ alt "Motor Circuit" width="400"/>
 <br>
 
  <div align= "center">
-<img src=""
+<img src="https://github.com/user-attachments/assets/3f6f3fb5-532f-4a1c-9546-32011c5732bf"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 4: Code to move motor robot (2/5). </figcaption>
@@ -71,7 +71,7 @@ alt "Motor Circuit" width="400"/>
 <br>
 
  <div align= "center">
-<img src=""
+<img src="https://github.com/user-attachments/assets/0a608d18-7450-4a1b-9c27-f9c0dee2f238"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 5: Code to move motor robot (3/5). </figcaption>
@@ -79,7 +79,7 @@ alt "Motor Circuit" width="400"/>
 <br>
 
  <div align= "center">
-<img src=""
+<img src="https://github.com/user-attachments/assets/12f038cf-e96c-46b1-a89d-47112acd131b"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 6: Code to move motor robot (4/5). </figcaption>
@@ -87,7 +87,7 @@ alt "Motor Circuit" width="400"/>
 <br>
 
  <div align= "center">
-<img src=""
+<img src="https://github.com/user-attachments/assets/2567850a-ed17-454f-aeb9-5ef4344eeb03"
 alt "Motor Circuit" width="400"/>
 <br>
 <figcaption style="font-size: 16px; text-align: center;"> Figure 7: Code to move motor robot (5/5). </figcaption>
@@ -182,9 +182,9 @@ Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports
 
 ## Test Equipment
 
-1. Fluke 87 V DMM
-2. Computer with Arduino IDE
-3. Oscilloscope
+1. A cable / adapter for connecting the smartphone to RedBoard
+2. Computer with Arduino IDE and MIT App Inventor 2
+3. A smartphone running an Android OS with the MIT AI2 Companion App
    
    
 ## Test Procedures
@@ -230,7 +230,7 @@ Upload the appropriate Arduino sketch to the RedBoard, ensuring that it supports
 **Modified Blocks for Bluetooth Compatability**
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f38f9655-7803-4f0a-9ae7-42975c43a762)" alt="Bluetooth Blocks 1" width="400">
+  <img src="https://github.com/user-attachments/assets/f38f9655-7803-4f0a-9ae7-42975c43a762" alt="Bluetooth Blocks 1" width="400">
       <br/>
   <figcaption style="font-size: 16px; text-align: center;"> Figure 16: Blocks added in MIT App Inventor 2 to enable bluetooth compatibility (1/3) </figcaption>
 </div>
@@ -274,4 +274,3 @@ What is the minimum speed that will move the complete car?
 
 
 ## Conclusion:
-This lab provided hands-on experience in microcontroller programming, sensor integration, and PWM signal control. The experiments demonstrated key principles of digital and analog signals, persistence of vision, and sensor-based input processing. The use of an oscilloscope to visualize PWM waveforms further reinforced the understanding of duty cycles and their effect on perceived LED brightness. These findings are essential for applications in embedded systems, electronic circuits, and real-world automation technologies.
