@@ -294,25 +294,14 @@ alt "Motor Circuit" width="400"/>
 
 
 ## Discussion:
-**Part 1: Assemble and Test Your Robot**
-<br>
 
-Disc Q: In Lab 6 we found out what was the minimum speed that will move the motors.
-What is the minimum speed that will move the complete car?
+In this lab, we developed an app to control a virtual car’s speed using checkboxes and buttons. The UI functioned as expected, with checkboxes setting predefined speed values and buttons controlling direction. The car’s movement accurately reflected speed selections, confirming effective communication between the app and the simulation.
 
-<br>
+Testing showed that the car required a minimum set speed of 91 to start moving, revealing an internal threshold in the simulation. Values below this had no effect, improving our understanding of the system’s behavior.
 
-**Part 2: Develop the App**
-<br>
+Overall, the app met functional requirements, allowing effective car control. Identifying the minimum speed requirement provided insight into system constraints, while refining input handling improved usability. Future improvements could include visual feedback for speed changes and a clearer indication of when the car is actively moving.
 
-
-<br>
-
-**Part 3: Wireless Remote**
-<br>
-
-
-<br>
 
 
 ## Conclusion:
+In conclusion, this lab successfully demonstrated the process of developing a mobile app to control a SparkFun robot car using Bluetooth communication. The app, built using MIT App Inventor, allowed for seamless control of the robot’s movement, including forward, backward, and turning, with adjustable speed settings. The Bluetooth connection was established with the HC-05 module, enabling wireless control. Testing revealed the minimum speed required for the car to move, and the app effectively responded to user inputs. The project provided valuable insights into app development, hardware integration, and troubleshooting, laying the foundation for future improvements such as enhanced feedback mechanisms and more precise control features.
